@@ -29,7 +29,16 @@ var userSchema = new Schema({
   lastName: String, //validation needed
   ongoingProjects: [projectSchema],
   doneProjects: [projectSchema],
-  organizations: [organizationSchema]
+  organizations: [organizationSchema],
+  interests: {
+    type: String,
+    required: True
+  },
+  lectures: {
+    type: String,
+    required: True
+  },
+
 });
 
 var users = mongoose.model("users", userSchema);

@@ -48,6 +48,20 @@ degrees = []
 for i in range(0, len(firstNames)):
     degrees.append(list_degree[random.randint(0, 3)])
 
+list_interests = ["Finance, Maths", "Singing, Skiing", "Economics, Biology", "Medicine, Biology", "Programming", "Machine Learning, Cooking"]
+interestss = []
+for i in range(0, len(firstNames)):
+    interestss.append(list_interests[random.randint(0, len(list_interests)-1)])
+
+list_lectures = ["Biology", "Physics", "Maths", "Arts", 'English', "German", "Stochastic Methods", "Time series"
+                 "History", "Diplomacy", "Food, Culture and Society", "Data Science Fundamentals"]
+lecturess = []
+for i in range(0, len(firstNames)):
+    lectures = []
+    for i in range(0, 3):
+        lectures.append(random.randint(1, len(list_lectures)))
+    lecturess.append(lectures)
+
 for i in range(0, len(firstNames)):
     users.append({"id": i,
                   "username": usernames[i],
@@ -56,7 +70,11 @@ for i in range(0, len(firstNames)):
                   "email": emails[i],
                   "degree": degrees[i],
                   "firstName": firstNames[i],
-                  "lastName": lastNames[i]})
+                  "lastName": lastNames[i],
+                  "interests": interestss[i],
+                  "lectures": lecturess[i]})
+
+
 """
 Projects
 """
