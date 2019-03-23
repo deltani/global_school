@@ -17,10 +17,15 @@ router.get("/:keyword", function(req, res) {
   var projects = require("../models/project");
 
   //new RegExp(projectKeyword, "i")
-  projects.find({ description: req.params.keyword }, function(err, docs) {
-    if (err) return console.log(err);
-    res.render("projects", { projects: docs });
-  });
+  projects.find(
+    { description: { $regex: req.params.keyword, $options: "i" } },
+    "title",
+    function(err, docs) {
+      console.log(docs);
+      if (err) return console.log(err);
+      res.render("projects", { projects: docs });
+    }
+  );
 });
 
 /* GET a specific project */
