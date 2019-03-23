@@ -48,10 +48,10 @@ degrees = []
 for i in range(0, len(firstNames)):
     degrees.append(list_degree[random.randint(0, 3)])
 
-list_interests = ["Finance, Maths", "Singing, Skiing", "Economics, Biology", "Medicine, Biology", "Programming", "Machine Learning, Cooking"]
+list_interests = ["Finance", "Maths", "Singing", "Skiing", "Economics", "Biology", "Medicine", "Biology", "Programming", "Machine Learning", "Cooking"]
 interestss = []
 for i in range(0, len(firstNames)):
-    interestss.append(list_interests[random.randint(0, len(list_interests)-1)])
+    interestss.append(list_interests[random.randint(0, len(list_interests)-1):random.randint(0, len(list_interests)-1)])
 
 list_lectures = ["Biology", "Physics", "Maths", "Arts", 'English', "German", "Stochastic Methods", "Time series"
                  "History", "Diplomacy", "Food, Culture and Society", "Data Science Fundamentals"]
@@ -63,7 +63,7 @@ for i in range(0, len(firstNames)):
     lecturess.append(lectures)
 
 for i in range(0, len(firstNames)):
-    users.append({"id": i,
+    users.append({"_id": i,
                   "username": usernames[i],
                   "pwd": "securepass",
                   "phone": phones[i],
@@ -72,7 +72,8 @@ for i in range(0, len(firstNames)):
                   "firstName": firstNames[i],
                   "lastName": lastNames[i],
                   "interests": interestss[i],
-                  "lectures": lecturess[i]})
+                  #"lectures": lecturess[i]
+                  })
 
 
 """
