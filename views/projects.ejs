@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>Project List</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <div class=search>
-    <input type="text" placeholder="Search for projects">
-    </div>
+    <h1>Project List</h1>
+    <ul>
+      <% var list = ''; for (i = 0; i < projects.length; i++) { list += '
+      <li>
+        <a href="mailto:' + projects[i].email + '"
+          >' + projects[i].title + '</a
+        >
+      </li>
+      '; } return list; %>
+    </ul>
   </body>
 </html>

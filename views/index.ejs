@@ -2,12 +2,14 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
   </head>
   <body>
     <h1><%= title %></h1>
-    <div class=search>
-    <input type="text" placeholder="Search for projects">
+    <div class=form>
+    <form action="/search" method="post">
+    <input type="text" placeholder="Search for projects" name="projectKeyword">
+    </form>
     </div>
   </body>
 </html>
