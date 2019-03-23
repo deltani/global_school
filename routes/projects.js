@@ -6,22 +6,15 @@ router.get("/", function(req, res) {
   var projects = require("../models/project");
   var projectKeyword = req.query.keyword;
 
-  if (projectKeyword) {
-    projects.find(
-      { description: { $regex: projectKeyword, $options: "i" } },
-      "title",
-      function(err, docs) {
-        if (err) return console.log(err);
-        res.render("projects", { projects: docs });
-      }
-    );
-  } else {
-    projects.find({}, "title", function(e, docs) {
+  projects.find(
+    { description: { $regex: projectKeyword, $options: "i" } },
+    "title",
+    function(e, docs) {
       res.render("projects", {
         projects: docs
       });
-    });
-  }
+    }
+  );
 });
 
 /* GET a specific project */
