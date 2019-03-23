@@ -6,50 +6,83 @@ router.get("/", function(req, res, next) {
   res.render("index", { title: "Global School" });
 });
 
-/* GET Userlist page. */
-router.get("/userlist", function(req, res) {
-  var db = req.db;
-  var collection = db.get("usercollection");
-  collection.find({}, {}, function(e, docs) {
-    res.render("userlist", {
-      userlist: docs
-    });
+router.post("/search", function(req, res, next) {
+  var projectKeyword = req.body.projectKeyword;
+  var { Project } = require("../models/project");
+
+  //new RegExp(projectKeyword, "i")
+  Project.find({ description: projectKeyword }, function(err, docs) {
+    if (err) return console.log(err);
+    res.render("projects", { projects: docs });
   });
+  // res.render("projects", { projects: docs });
+  res.redirect("projects");
 });
 
-/* GET New User page. */
-router.get("/newuser", function(req, res) {
-  res.render("newuser", { title: "Add New User" });
-});
+// /* POST to Add User Service */
+// router.post("/adduser", function(req, res) {
+//   // Submit to the DB
+//   collection.insert(
+//     {
+//       username: userName,
+//       email: userEmail
+//     },
+//     function(err, doc) {
+//       if (err) {
+//         // If it failed, return error
+//         res.send("There was a problem adding the information to the database.");
+//       } else {
+//         // And forward to success page
+//         res.redirect("userlist");
+//       }
+//     }
+//   );
+// });
 
-/* POST to Add User Service */
-router.post("/adduser", function(req, res) {
-  // Set our internal DB variable
-  var db = req.db;
+// /* GET Userlist page. */
+// router.get("/userlist", function(req, res) {
+//   var db = req.db;
+//   var collection = db.get("usercollection");
+//   collection.find({}, {}, function(e, docs) {
+//     res.render("userlist", {
+//       userlist: docs
+//     });
+//   });
+// });
 
-  // Get our form values. These rely on the "name" attributes
-  var userName = req.body.username;
-  var userEmail = req.body.useremail;
+// /* GET New User page. */
+// router.get("/newuser", function(req, res) {
+//   res.render("newuser", { title: "Add New User" });
+// });
 
-  // Set our collection
-  var collection = db.get("usercollection");
+// /* POST to Add User Service */
+// router.post("/adduser", function(req, res) {
+//   // Set our internal DB variable
+//   var db = req.db;
 
-  // Submit to the DB
-  collection.insert(
-    {
-      username: userName,
-      email: userEmail
-    },
-    function(err, doc) {
-      if (err) {
-        // If it failed, return error
-        res.send("There was a problem adding the information to the database.");
-      } else {
-        // And forward to success page
-        res.redirect("userlist");
-      }
-    }
-  );
-});
+//   // Get our form values. These rely on the "name" attributes
+//   var userName = req.body.username;
+//   var userEmail = req.body.useremail;
+
+//   // Set our collection
+//   var collection = db.get("usercollection");
+
+//   // Submit to the DB
+//   collection.insert(
+//     {
+//       username: userName,
+//       email: userEmail
+//     },
+//     function(err, doc) {
+//       if (err) {
+//         // If it failed, return error
+//         res.send("There was a problem adding the information to the database.");
+//       } else {
+//         // And forward to success page
+//         res.redirect("userlist");
+//       }
+//     }
+//   );
+// });
 
 module.exports = router;

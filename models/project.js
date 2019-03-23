@@ -1,8 +1,14 @@
 var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
+var userSchema = require("./user").userSchema;
+
 var projectSchema = new Schema({
   title: {
+    type: String,
+    required: True
+  },
+  description: {
     type: String,
     required: True
   },
@@ -13,12 +19,16 @@ var projectSchema = new Schema({
     required: True
   },
   assignedUsers: [userSchema]
+  // accessibility: {
+  //   type: String,
+  //   enum: ["public"]
+  // }
   // feedback
   // references
   // target group
   //
 });
 
-var projects = mongoose.model("projects", projectSchema);
+var Project = mongoose.model("Project", projectSchema);
 
-module.exports = projects;
+module.exports = { Project, projectSchema };
