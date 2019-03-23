@@ -1,8 +1,6 @@
 var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
-var projectSchema = require("./project").projectSchema;
-
 var organizationSchema = new Schema({
   name: {
     type: String,
@@ -11,9 +9,9 @@ var organizationSchema = new Schema({
   address: String,
   homepage: String, //validation needed
   logo: { type: Buffer, contentType: String },
-  projects: [projectSchema]
+  projects: [ObjectID] //store project id
 });
 
 var Organizations = mongoose.model("Organization", organizationSchema);
 
-module.exports = { Organization, organizationSchema };
+module.exports = Organization;

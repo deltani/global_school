@@ -1,9 +1,6 @@
 var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
-var projectSchema = require("./project").projectSchema;
-var organizationSchema = require("./organization").organizationSchema;
-
 var userSchema = new Schema({
   username: {
     type: String,
@@ -30,9 +27,9 @@ var userSchema = new Schema({
   },
   firstName: String, //validation needed
   lastName: String, //validation needed
-  ongoingProjects: [projectSchema],
-  doneProjects: [projectSchema],
-  organizations: [organizationSchema],
+  ongoingProjects: [ObjectID], //project id
+  doneProjects: [ObjectID], //project id
+  organizations: [ObjectID], //organization id
   interests: {
     type: String,
     required: True
@@ -40,10 +37,9 @@ var userSchema = new Schema({
   lectures: {
     type: String,
     required: True
-  },
-
+  }
 });
 
 var User = mongoose.model("User", userSchema);
 
-module.exports = { User, userSchema };
+module.exports = User;

@@ -1,1 +1,237 @@
-[{"_id": 0, "username": "sherilyn_debi", "pwd": "securepass", "phone": 41794814875, "email": "sherilyn_debi@lyceum-alpinum.ch", "degree": "PhD", "firstName": "Sherilyn", "lastName": "Debi", "interests": ["Economics", "Biology"]}, {"_id": 1, "username": "vally_giovanni", "pwd": "securepass", "phone": 41791296775, "email": "vally_giovanni@lyceum-alpinum.ch", "degree": "Master", "firstName": "Vally", "lastName": "Giovanni", "interests": []}, {"_id": 2, "username": "moll_fatma", "pwd": "securepass", "phone": 41791765250, "email": "moll_fatma@lyceum-alpinum.ch", "degree": "Bachelor", "firstName": "Moll", "lastName": "Fatma", "interests": []}, {"_id": 3, "username": "linea_particia", "pwd": "securepass", "phone": 41796374121, "email": "linea_particia@lyceum-alpinum.ch", "degree": "Bachelor", "firstName": "Linea", "lastName": "Particia", "interests": ["Machine Learning"]}, {"_id": 4, "username": "demeter_enrica", "pwd": "securepass", "phone": 41798189645, "email": "demeter_enrica@lyceum-alpinum.ch", "degree": "PhD", "firstName": "Demeter", "lastName": "Enrica", "interests": ["Finance", "Maths", "Singing", "Skiing"]}, {"_id": 5, "username": "gabi_libbie", "pwd": "securepass", "phone": 41799535047, "email": "gabi_libbie@lyceum-alpinum.ch", "degree": "High School", "firstName": "Gabi", "lastName": "Libbie", "interests": []}, {"_id": 6, "username": "carrissa_hasseman", "pwd": "securepass", "phone": 41792386267, "email": "carrissa_hasseman@lyceum-alpinum.ch", "degree": "Bachelor", "firstName": "Carrissa", "lastName": "Hasseman", "interests": []}, {"_id": 7, "username": "barbie_zelde", "pwd": "securepass", "phone": 41791245284, "email": "barbie_zelde@lyceum-alpinum.ch", "degree": "Master", "firstName": "Barbie", "lastName": "Zelde", "interests": []}, {"_id": 8, "username": "valina_cobby", "pwd": "securepass", "phone": 41791640742, "email": "valina_cobby@lyceum-alpinum.ch", "degree": "High School", "firstName": "Valina", "lastName": "Cobby", "interests": []}, {"_id": 9, "username": "hyacintha_eberhard", "pwd": "securepass", "phone": 41792629277, "email": "hyacintha_eberhard@lyceum-alpinum.ch", "degree": "Bachelor", "firstName": "Hyacintha", "lastName": "Eberhard", "interests": ["Biology"]}, {"_id": 10, "username": "jolie_irfan", "pwd": "securepass", "phone": 41797124311, "email": "jolie_irfan@lyceum-alpinum.ch", "degree": "Master", "firstName": "Jolie", "lastName": "Irfan", "interests": ["Finance", "Maths", "Singing", "Skiing", "Economics", "Biology", "Medicine"]}, {"_id": 11, "username": "astrix_leah", "pwd": "securepass", "phone": 41791615339, "email": "astrix_leah@lyceum-alpinum.ch", "degree": "High School", "firstName": "Astrix", "lastName": "Leah", "interests": []}, {"_id": 12, "username": "adrea_lissie", "pwd": "securepass", "phone": 41797837091, "email": "adrea_lissie@lyceum-alpinum.ch", "degree": "Bachelor", "firstName": "Adrea", "lastName": "Lissie", "interests": ["Skiing", "Economics", "Biology", "Medicine", "Biology"]}, {"_id": 13, "username": "karlotte_fortune", "pwd": "securepass", "phone": 41798674332, "email": "karlotte_fortune@lyceum-alpinum.ch", "degree": "Master", "firstName": "Karlotte", "lastName": "Fortune", "interests": ["Skiing", "Economics", "Biology", "Medicine"]}, {"_id": 14, "username": "barbi_kayle", "pwd": "securepass", "phone": 41791586472, "email": "barbi_kayle@lyceum-alpinum.ch", "degree": "Bachelor", "firstName": "Barbi", "lastName": "Kayle", "interests": ["Skiing"]}, {"_id": 15, "username": "salomi_tonry", "pwd": "securepass", "phone": 41797027083, "email": "salomi_tonry@lyceum-alpinum.ch", "degree": "Bachelor", "firstName": "Salomi", "lastName": "Tonry", "interests": []}, {"_id": 16, "username": "lula_christophe", "pwd": "securepass", "phone": 41796562818, "email": "lula_christophe@lyceum-alpinum.ch", "degree": "Master", "firstName": "Lula", "lastName": "Christophe", "interests": ["Economics", "Biology", "Medicine", "Biology", "Programming", "Machine Learning"]}, {"_id": 17, "username": "andie_sokil", "pwd": "securepass", "phone": 41798269003, "email": "andie_sokil@lyceum-alpinum.ch", "degree": "High School", "firstName": "Andie", "lastName": "Sokil", "interests": []}, {"_id": 18, "username": "carolyn_saito", "pwd": "securepass", "phone": 41798130234, "email": "carolyn_saito@lyceum-alpinum.ch", "degree": "Bachelor", "firstName": "Carolyn", "lastName": "Saito", "interests": ["Skiing", "Economics", "Biology", "Medicine", "Biology"]}, {"_id": 19, "username": "benedicta_dominica", "pwd": "securepass", "phone": 41796729139, "email": "benedicta_dominica@lyceum-alpinum.ch", "degree": "PhD", "firstName": "Benedicta", "lastName": "Dominica", "interests": []}]
+[
+  {
+    "_id": 0,
+    "username": "sherilyn_debi",
+    "pwd": "securepass",
+    "phone": 41794814875,
+    "email": "sherilyn_debi@lyceum-alpinum.ch",
+    "degree": "PhD",
+    "firstName": "Sherilyn",
+    "lastName": "Debi",
+    "interests": ["Economics", "Biology"]
+  },
+  {
+    "_id": 1,
+    "username": "vally_giovanni",
+    "pwd": "securepass",
+    "phone": 41791296775,
+    "email": "vally_giovanni@lyceum-alpinum.ch",
+    "degree": "Master",
+    "firstName": "Vally",
+    "lastName": "Giovanni",
+    "interests": []
+  },
+  {
+    "_id": 2,
+    "username": "moll_fatma",
+    "pwd": "securepass",
+    "phone": 41791765250,
+    "email": "moll_fatma@lyceum-alpinum.ch",
+    "degree": "Bachelor",
+    "firstName": "Moll",
+    "lastName": "Fatma",
+    "interests": []
+  },
+  {
+    "_id": 3,
+    "username": "linea_particia",
+    "pwd": "securepass",
+    "phone": 41796374121,
+    "email": "linea_particia@lyceum-alpinum.ch",
+    "degree": "Bachelor",
+    "firstName": "Linea",
+    "lastName": "Particia",
+    "interests": ["Machine Learning"]
+  },
+  {
+    "_id": 4,
+    "username": "demeter_enrica",
+    "pwd": "securepass",
+    "phone": 41798189645,
+    "email": "demeter_enrica@lyceum-alpinum.ch",
+    "degree": "PhD",
+    "firstName": "Demeter",
+    "lastName": "Enrica",
+    "interests": ["Finance", "Maths", "Singing", "Skiing"]
+  },
+  {
+    "_id": 5,
+    "username": "gabi_libbie",
+    "pwd": "securepass",
+    "phone": 41799535047,
+    "email": "gabi_libbie@lyceum-alpinum.ch",
+    "degree": "High School",
+    "firstName": "Gabi",
+    "lastName": "Libbie",
+    "interests": []
+  },
+  {
+    "_id": 6,
+    "username": "carrissa_hasseman",
+    "pwd": "securepass",
+    "phone": 41792386267,
+    "email": "carrissa_hasseman@lyceum-alpinum.ch",
+    "degree": "Bachelor",
+    "firstName": "Carrissa",
+    "lastName": "Hasseman",
+    "interests": []
+  },
+  {
+    "_id": 7,
+    "username": "barbie_zelde",
+    "pwd": "securepass",
+    "phone": 41791245284,
+    "email": "barbie_zelde@lyceum-alpinum.ch",
+    "degree": "Master",
+    "firstName": "Barbie",
+    "lastName": "Zelde",
+    "interests": []
+  },
+  {
+    "_id": 8,
+    "username": "valina_cobby",
+    "pwd": "securepass",
+    "phone": 41791640742,
+    "email": "valina_cobby@lyceum-alpinum.ch",
+    "degree": "High School",
+    "firstName": "Valina",
+    "lastName": "Cobby",
+    "interests": []
+  },
+  {
+    "_id": 9,
+    "username": "hyacintha_eberhard",
+    "pwd": "securepass",
+    "phone": 41792629277,
+    "email": "hyacintha_eberhard@lyceum-alpinum.ch",
+    "degree": "Bachelor",
+    "firstName": "Hyacintha",
+    "lastName": "Eberhard",
+    "interests": ["Biology"]
+  },
+  {
+    "_id": 10,
+    "username": "jolie_irfan",
+    "pwd": "securepass",
+    "phone": 41797124311,
+    "email": "jolie_irfan@lyceum-alpinum.ch",
+    "degree": "Master",
+    "firstName": "Jolie",
+    "lastName": "Irfan",
+    "interests": [
+      "Finance",
+      "Maths",
+      "Singing",
+      "Skiing",
+      "Economics",
+      "Biology",
+      "Medicine"
+    ]
+  },
+  {
+    "_id": 11,
+    "username": "astrix_leah",
+    "pwd": "securepass",
+    "phone": 41791615339,
+    "email": "astrix_leah@lyceum-alpinum.ch",
+    "degree": "High School",
+    "firstName": "Astrix",
+    "lastName": "Leah",
+    "interests": []
+  },
+  {
+    "_id": 12,
+    "username": "adrea_lissie",
+    "pwd": "securepass",
+    "phone": 41797837091,
+    "email": "adrea_lissie@lyceum-alpinum.ch",
+    "degree": "Bachelor",
+    "firstName": "Adrea",
+    "lastName": "Lissie",
+    "interests": ["Skiing", "Economics", "Biology", "Medicine", "Biology"]
+  },
+  {
+    "_id": 13,
+    "username": "karlotte_fortune",
+    "pwd": "securepass",
+    "phone": 41798674332,
+    "email": "karlotte_fortune@lyceum-alpinum.ch",
+    "degree": "Master",
+    "firstName": "Karlotte",
+    "lastName": "Fortune",
+    "interests": ["Skiing", "Economics", "Biology", "Medicine"]
+  },
+  {
+    "_id": 14,
+    "username": "barbi_kayle",
+    "pwd": "securepass",
+    "phone": 41791586472,
+    "email": "barbi_kayle@lyceum-alpinum.ch",
+    "degree": "Bachelor",
+    "firstName": "Barbi",
+    "lastName": "Kayle",
+    "interests": ["Skiing"]
+  },
+  {
+    "_id": 15,
+    "username": "salomi_tonry",
+    "pwd": "securepass",
+    "phone": 41797027083,
+    "email": "salomi_tonry@lyceum-alpinum.ch",
+    "degree": "Bachelor",
+    "firstName": "Salomi",
+    "lastName": "Tonry",
+    "interests": []
+  },
+  {
+    "_id": 16,
+    "username": "lula_christophe",
+    "pwd": "securepass",
+    "phone": 41796562818,
+    "email": "lula_christophe@lyceum-alpinum.ch",
+    "degree": "Master",
+    "firstName": "Lula",
+    "lastName": "Christophe",
+    "interests": [
+      "Economics",
+      "Biology",
+      "Medicine",
+      "Biology",
+      "Programming",
+      "Machine Learning"
+    ]
+  },
+  {
+    "_id": 17,
+    "username": "andie_sokil",
+    "pwd": "securepass",
+    "phone": 41798269003,
+    "email": "andie_sokil@lyceum-alpinum.ch",
+    "degree": "High School",
+    "firstName": "Andie",
+    "lastName": "Sokil",
+    "interests": []
+  },
+  {
+    "_id": 18,
+    "username": "carolyn_saito",
+    "pwd": "securepass",
+    "phone": 41798130234,
+    "email": "carolyn_saito@lyceum-alpinum.ch",
+    "degree": "Bachelor",
+    "firstName": "Carolyn",
+    "lastName": "Saito",
+    "interests": ["Skiing", "Economics", "Biology", "Medicine", "Biology"]
+  },
+  {
+    "_id": 19,
+    "username": "benedicta_dominica",
+    "pwd": "securepass",
+    "phone": 41796729139,
+    "email": "benedicta_dominica@lyceum-alpinum.ch",
+    "degree": "PhD",
+    "firstName": "Benedicta",
+    "lastName": "Dominica",
+    "interests": []
+  }
+]

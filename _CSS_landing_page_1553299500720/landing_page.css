@@ -1,0 +1,187 @@
+/*
+ *	This content is generated from the PSD File Info.
+ *	(Alt+Shift+Ctrl+I).
+ *
+ *	@desc 		
+ *	@file 		landing_page
+ *	@date 		0
+ *	@title 		LANDING_PAGE
+ *	@author 	
+ *	@keywords 	
+ *	@generator 	Export Kit v1.2.8.xd
+ *
+*/
+
+/* Only edit this if you know what you are doing! */
+body { margin: 0px; padding: 0px; font-family:"Arial"; /*overflow-x:hidden;*/ }
+
+/* Only edit this if you know what you are doing! */
+img { position: absolute; display: block; margin: 0px; border: none; padding: 0px; }
+
+/* Only edit this if you know what you are doing! */
+div { position: absolute; }
+
+#content-container { display: block; position: relative; width: 1920px; height: 1080px; overflow: hidden;  }
+
+#_bg__landing_page {
+	top: 0px;
+	left: 0px;
+	width: 1920px;
+	height: 1080px;
+	background:rgba(255,255,255,255);
+}
+#rectangle_12 {
+	top: 0px;
+	left: 0px;
+	width: 1918px;
+	height: 1078px;
+	border: 1px solid #707070;
+	background:rgba(255,255,255,255);
+}
+#logo {
+	top: 61px;
+	left: 80px;
+	width: 809px;
+	height: 252px;
+}
+#back1 {
+	top: 0px;
+	left: 0px;
+	width: 1920px;
+	height: 1080px;
+}
+#rectangle_5 {
+	opacity:0.43999999761581;
+	top: 0px;
+	left: 1632px;
+	width: 286px;
+	height: 1078px;
+	border: 1px solid #707070;
+	background:rgba(8,128,36,255);
+}
+#rectangle_1 {
+	top: 0px;
+	left: 1632px;
+	width: 286.04272460938px;
+	height: 71.184844970703px;
+	border: 1px solid #707070;
+	background:rgba(16,129,165,255);
+}
+#student {
+	top: 11px;
+	left: 1711px;
+	width: 136px;
+	height: 42px;
+	font-family: Swis721 Lt BT;
+	font-size: 30px;
+	text-align: left;
+	color:#ffffff;
+}
+#ic_search_white_48dp {
+	top: 766px;
+	left: 732px;
+	width: 82px;
+	height: 82px;
+}
+#rectangle_7 {
+	top: 146px;
+	left: 1632px;
+	width: 286.04272460938px;
+	height: 71.184844970703px;
+	border: 1px solid #707070;
+	background:rgba(181,181,181,255);
+}
+#sign_in {
+	top: 156px;
+	left: 1724px;
+	width: 110px;
+	height: 42px;
+	font-family: Swis721 Lt BT;
+	font-size: 30px;
+	text-align: left;
+	color:#ffffff;
+}
+#logo2 {
+	top: 489px;
+	left: -180px;
+	width: 580px;
+	height: 699px;
+}
+#rectangle_6 {
+	opacity:0.75;
+	top: 766px;
+	left: 80px;
+	width: 637px;
+	height: 70px;
+	border: 1px solid #707070;
+	background:rgba(255,255,255,255);
+}
+#explore_opportunities {
+	top: 845px;
+	left: 80px;
+	width: 368px;
+	height: 42px;
+	font-family: Swis721 Lt BT;
+	font-size: 30px;
+	text-align: left;
+	color:#ffffff;
+}
+#get_started {
+	top: 662px;
+	left: 80px;
+	width: 452px;
+	height: 98px;
+	font-family: Swis721 Lt BT;
+	font-size: 70px;
+	text-align: left;
+	color:#ffffff;
+}
+#rectangle_11 {
+	top: 73px;
+	left: 1632px;
+	width: 286.04272460938px;
+	height: 71.184844970703px;
+	border: 1px solid #707070;
+	background:rgba(115,74,138,255);
+}
+#company {
+	top: 84px;
+	left: 1705px;
+	width: 148px;
+	height: 42px;
+	font-family: Swis721 Lt BT;
+	font-size: 30px;
+	text-align: left;
+	color:#ffffff;
+}
+#rectangle_22 {
+	top: 853px;
+	left: 472px;
+	width: 245px;
+	height: 55px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	border: 1px solid #707070;
+	-ms-box-shadow:0px 3px 15px 1px rgba(0,0,0,0.41);
+	-o-box-shadow:0px 3px 15px 1px rgba(0,0,0,0.41);
+	-webkit-box-shadow:0px 3px 15px 1px rgba(0,0,0,0.41);
+	-moz-box-shadow:0px 3px 15px 1px rgba(0,0,0,0.41);
+	box-shadow:0px 3px 15px 1px rgba(0,0,0,0.41);
+	background:rgba(168,44,44,255);
+}
+#show_all {
+	top: 861px;
+	left: 531px;
+	width: 126px;
+	height: 35px;
+	font-family: Swis721 Lt BT;
+	font-size: 25px;
+	text-align: left;
+	color:#ffffff;
+}
+
+/* Add your custom CSS here */
+

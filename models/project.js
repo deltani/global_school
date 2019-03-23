@@ -12,13 +12,13 @@ var projectSchema = new Schema({
     type: String,
     required: True
   },
-  supervisor: [userSchema],
+  supervisor: [ObjectID()], //store userid
   status: {
     type: String,
     enum: ["available", "ongoing", "finished"],
     required: True
   },
-  assignedUsers: [userSchema]
+  assignedUsers: [ObjectID()] //store userid
   // accessibility: {
   //   type: String,
   //   enum: ["public"]
@@ -31,4 +31,4 @@ var projectSchema = new Schema({
 
 var Project = mongoose.model("Project", projectSchema);
 
-module.exports = { Project, projectSchema };
+module.exports = Project;
