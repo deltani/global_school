@@ -1,31 +1,27 @@
 var express = require("express");
 var router = express.Router();
 
-/* GET all projects */
+/* GET all projects that contain the keyword */
 router.get("/", function(req, res) {
   var projects = require("../models/project");
-  projects.find({}, "title", function(e, docs) {
-    console.log(docs);
-    res.render("projects", {
-      projects: docs
+  var projectKeyword = req.query.keyword;
+
+  if (projectKeyword) {
+    projects.find(
+      { description: { $regex: projectKeyword, $options: "i" } },
+      "title",
+      function(err, docs) {
+        if (err) return console.log(err);
+        res.render("projects", { projects: docs });
+      }
+    );
+  } else {
+    projects.find({}, "title", function(e, docs) {
+      res.render("projects", {
+        projects: docs
+      });
     });
-  });
-});
-
-/* GET satisfied condition projects */
-router.get("/:keyword", function(req, res) {
-  var projects = require("../models/project");
-
-  //new RegExp(projectKeyword, "i")
-  projects.find(
-    { description: { $regex: req.params.keyword, $options: "i" } },
-    "title",
-    function(err, docs) {
-      console.log(docs);
-      if (err) return console.log(err);
-      res.render("projects", { projects: docs });
-    }
-  );
+  }
 });
 
 /* GET a specific project */

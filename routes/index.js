@@ -3,11 +3,11 @@ var router = express.Router();
 
 /* GET home page. */
 router.get("/", function(req, res, next) {
-  res.render("tmp", { title: "Global School" });
+  res.render("index", { title: "Global School" });
 });
 
-router.post("/search", function(req, res, next) {
-  res.redirect("projects/".concat(req.body.projectKeyword));
+router.get("/search", function(req, res, next) {
+  res.redirect("/projects?keyword=".concat(req.query.keyword));
 });
 
 // /* POST to Add User Service */
