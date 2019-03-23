@@ -7,13 +7,9 @@
   <body>
     <h1>Project List</h1>
     <ul>
-      <% var list = ''; for (i = 0; i < projects.length; i++) { list += '
-      <li>
-        <a href="mailto:' + projects[i].email + '"
-          >' + projects[i].title + '</a
-        >
-      </li>
-      '; } return list; %>
+    <%for (var i in projects){%>
+      <li><%=i%>:<%=projects[i].title%></li>    
+      <%}%>
     </ul>
   </body>
 </html>

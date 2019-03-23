@@ -2,23 +2,24 @@ var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
 var userSchema = new Schema({
+  _id: Number,
   username: {
     type: String,
-    required: True
+    required: true
   }, //validation needed
   registeredOn: {
     type: Date,
-    required: True,
+    required: true,
     default: Date.now
   },
   pwd: {
     type: String,
-    required: True
+    required: true
   }, // encrypted
   phone: Number, //validation needed
   email: {
     type: String,
-    required: True
+    required: true
   }, //validation needed
   degree: {
     // highest degree obtained
@@ -27,19 +28,19 @@ var userSchema = new Schema({
   },
   firstName: String, //validation needed
   lastName: String, //validation needed
-  ongoingProjects: [ObjectID], //project id
-  doneProjects: [ObjectID], //project id
-  organizations: [ObjectID], //organization id
+  ongoingProjects: [Number], //project id
+  doneProjects: [Number], //project id
+  organizations: [Number], //organization id
   interests: {
     type: String,
-    required: True
+    required: true
   },
   lectures: {
     type: String,
-    required: True
+    required: true
   }
 });
 
-var User = mongoose.model("User", userSchema);
+var users = mongoose.model("users", userSchema, "users");
 
-module.exports = User;
+module.exports = users;

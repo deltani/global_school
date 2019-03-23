@@ -4,14 +4,18 @@ var Schema = mongoose.Schema;
 var organizationSchema = new Schema({
   name: {
     type: String,
-    required: True
+    required: true
   },
   address: String,
   homepage: String, //validation needed
   logo: { type: Buffer, contentType: String },
-  projects: [ObjectID] //store project id
+  projects: [Number] //store project id
 });
 
-var Organizations = mongoose.model("Organization", organizationSchema);
+var organizations = mongoose.model(
+  "organizations",
+  organizationSchema,
+  "organizations"
+);
 
-module.exports = Organization;
+module.exports = organizations;

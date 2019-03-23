@@ -3,13 +3,23 @@ var router = express.Router();
 
 /* GET all projects */
 router.get("/", function(req, res) {
-  var db = req.db;
-  var projectKeyword = req.body.projectKeyword; //?
-  var projects = db.get("Project");
-  projects.find({}, {}, function(e, docs) {
-    res.render("project", {
+  var projects = require("../models/project");
+  projects.find({}, "title", function(e, docs) {
+    console.log(docs);
+    res.render("projects", {
       projects: docs
     });
+  });
+});
+
+/* GET satisfied condition projects */
+router.get("/:keyword", function(req, res) {
+  var projects = require("../models/project");
+
+  //new RegExp(projectKeyword, "i")
+  projects.find({ description: req.params.keyword }, function(err, docs) {
+    if (err) return console.log(err);
+    res.render("projects", { projects: docs });
   });
 });
 

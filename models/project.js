@@ -6,19 +6,19 @@ var userSchema = require("./user").userSchema;
 var projectSchema = new Schema({
   title: {
     type: String,
-    required: True
+    required: true
   },
   description: {
     type: String,
-    required: True
+    required: true
   },
-  supervisor: [ObjectID()], //store userid
+  supervisor: [Number], //store userid
   status: {
     type: String,
     enum: ["available", "ongoing", "finished"],
-    required: True
+    required: true
   },
-  assignedUsers: [ObjectID()] //store userid
+  assignedUsers: [Number] //store userid
   // accessibility: {
   //   type: String,
   //   enum: ["public"]
@@ -29,6 +29,6 @@ var projectSchema = new Schema({
   //
 });
 
-var Project = mongoose.model("Project", projectSchema);
+var projects = mongoose.model("projects", projectSchema, "projects");
 
-module.exports = Project;
+module.exports = projects;

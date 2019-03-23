@@ -16,7 +16,9 @@ mongoose.set("debug", true);
 const uri = "mongodb://localhost:27017/global-school",
   options = { useNewUrlParser: true };
 
-mongoose.connect(uri, options);
+mongoose.connect(uri, options, function(err) {
+  if (err) throw err;
+});
 
 const indexRouter = require("./routes/index");
 const usersRouter = require("./routes/users");

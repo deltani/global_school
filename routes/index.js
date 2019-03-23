@@ -7,16 +7,7 @@ router.get("/", function(req, res, next) {
 });
 
 router.post("/search", function(req, res, next) {
-  var projectKeyword = req.body.projectKeyword;
-  var { Project } = require("../models/project");
-
-  //new RegExp(projectKeyword, "i")
-  Project.find({ description: projectKeyword }, function(err, docs) {
-    if (err) return console.log(err);
-    res.render("projects", { projects: docs });
-  });
-  // res.render("projects", { projects: docs });
-  res.redirect("projects");
+  res.redirect("projects/".concat(req.body.projectKeyword));
 });
 
 // /* POST to Add User Service */
