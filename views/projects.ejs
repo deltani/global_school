@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Project List</title>
-    <link rel="stylesheet" href="/stylesheets/style.css" />
-  </head>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Global School</title>
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand" rel="stylesheet">
+<link rel='stylesheet' href="/stylesheets/minireset.css" />
+<link rel='stylesheet' href="/stylesheets/main.css" />
+</head>
   <body>
-    <h1>Project List</h1>
-    <ul>
+  <div class="collection">
     <%for (var i in projects){%>
-      <li><%=i%>:<%=projects[i].title%></li>    
-      <%}%>
-    </ul>
+      <div class="project">
+        <h2><%=projects[i].title%></h2>
+        <hr>
+        <p><%=projects[i].description%></p>
+      </div>  
+    <%}%>
+  </div>
   </body>
 </html>
